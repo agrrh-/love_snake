@@ -35,8 +35,9 @@ function love.draw()
     end
 
     if cond1 or cond2 then
+        level = (1 - delay - 0.24) * 100
         love.graphics.setColor(clrWhite)
-        love.graphics.print("Game Over!", 280, 300)
+        love.graphics.print("Game Over: ".. level, 280, 300)
     end
 end
 
